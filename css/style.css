@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.card-container{
+    width: 100%;
+    min-height: 30vh;
+}
+.submitBtn.deleted{
+    display: none;
+}
+.completeBtn{
+    display: none !important;
+}
+.completeBtn.displyFflex{
+    display: inline-flex !important;
+}
