@@ -21,3 +21,16 @@ body{
 .completeBtn.displyFflex{
     display: inline-flex !important;
 }
+.texttt.removeTag , .submitBtn.removeTag , .pishka.removeTag , .inputs.removeTag , .btn-success.removeTag , .getRando{  
+    display: none !important;
+}
+.getRando.create{
+    display: block !important;
+}
+.inputs.randomed{
+    background-color: black;
+}
+.lishka.colored{    
+    background-color: rgb(22, 38, 53);
+    color: white;
+}
