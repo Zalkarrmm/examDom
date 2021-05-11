@@ -62,15 +62,16 @@ function createBtn(){
     getRando.classList.add('create')
 }
 function getRandom(){
-    let count = JSON.parse(localStorage.getItem('counter'))
+    let count = JSON.parse(localStorage.getItem('counter'));
     let random = Math.floor(Math.random()*count )
-    if(document.querySelector('.colored')){
+    if(!document.querySelector('.colored')){
+        const rand = document.querySelector(`.li${random+1}`)
+        rand.classList.toggle('colored')
+    }else{
+        const rem = document.querySelector('.colored')
+        rem.classList.remove('colored')
         const rand = document.querySelector(`.li${random+1}`)
         rand.classList.remove('colored')
         console.log(rand);
-    }else{
-        const rand = document.querySelector(`.li${random+1}`)
-        rand.classList.toggle('colored')
-    console.log(rand);
     }
 }
